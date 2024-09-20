@@ -36,10 +36,11 @@ def decrypt(message, shift):
 def main():
     while True:
         try:
+            print("Welcome to the good-ol fashion Caesar cipher program.")
             query = int(input("Would you like to:\n 1.) Encrypt\n2.) Decrypt \n: "))
             if query == 1:
                 message = input("Enter your message: ")
-                shift = int(input("Enter the shift value: "))
+                shift = int(input("Enter the shift value (Please remember the shift value for decoding!): "))
                 encrypted_message = encrypt(message, shift)
                 print(f"\nYour encoded message: {encrypted_message}")
 
